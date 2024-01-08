@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/0411086730.js" crossorigin="anonymous"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.0.0/scrollReveal.min.js" integrity="sha512-L56hqljAjZhvB9f32klSO2ltXUlKbaOY2KdlNLOdzxJtl0jNvNQFKTP3u0MIFUP3mXTzYdy7KCaUSvi7QBWxNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" id="logo"><span>S</span>aliu.</a>
+                 <!-- <img src="images/logo.png" class="logo" alt=""> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <img src="images/sun.png" id="icon">
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            <div class="header-text" data-aos="fade-up">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Saliu</span><br>Gbolajobi from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about ------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-up">
+                    <img src="images/user.png"  alt="user">
+                </div>
+                <div class="about-col-2" data-aos="fade-up">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>Passionate web designer dedicated to transforming concepts into captivating online experiences. With expertise in HTML, CSS, 
+                        and a keen eye for design, I craft visually stunning, user-friendly 
+                        websites. Committed to staying on the cutting edge of industry trends to 
+                        deliver impactful digital solutions tailored to your unique vision. 
+                        Let's create something extraordinary together.</p>
+                    <div class="sub-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br/>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br/>Team lead at StarApp LLC.</li>
+                            <li><span>2016 - 2017</span><br/>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br/>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br/>MBA from MIT Bangalore.</li>
+                            <li><span>2014</span><br/>BBA from ISM Bangalore.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-up">My <span>Services</span></h1>
+            <div class="services-list">
+                <div data-aos="fade-up">
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Transform your online presence with our bespoke web design. We create visually captivating websites, combining creativity with strategic functionality for an engaging user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div data-aos="fade-up">
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Revolutionize your brand's digital presence with our tailored UI/UX design. We intricately blend creativity and functionality, ensuring an immersive and delightful user journey that aligns seamlessly with your unique vision and goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div data-aos="fade-up">
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Crafting intuitive and visually striking mobile experiences. Elevate your app's appeal with our expert design, seamlessly blending creativity and user-centric functionality.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-up">My <span>Work</span></h1>
+            <div class="work-list">
+                <div class="work" data-aos="fade-up">
+                    <img src="images/work-1.png" alt="image">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Dwnload it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-up">
+                    <img src="images/work-2.png" alt="image">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Dwnload it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-up">
+                    <img src="images/work-3.png" alt="image">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Dwnload it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" data-aos="fade-up">See More</a>
+        </div>
+    </div>
+
+    <!-- ----------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" data-aos="fade-up">
+                    <h1 class="sub-title"">Contact <span>Me</span></h1>
+                    <p><i class="fas fa-paper-plane"></i>soli4sure05@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+234-80-630-606-71</p>
+                    <!-- <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>                    
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>                    
+                        <a href="#"><i class="fab fa-instagram"></i></a>                    
+                        <a href="#"><i class="fab fa-linkedin"></i></a>              
+                    </div> -->
+                    <div class="social-icons-2">     
+                        <a href="index.html"> <i class='bx bxl-facebook bx-sm'></i></a>   
+                        <a href="/"> <i class='bx bxl-twitter'></i></a>   
+                        <a href="/"> <i class='bx bxl-instagram'></i></a>   
+                        <a href="/"> <i class='bx bxl-linkedin'></i></a>        
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right" data-aos="fade-up">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2 fill" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright-------------------- -->
+    <div class="copyright">
+        <p>Copyright &copy; Saliu 2024.</p>
+    </div>
+
+    <!-- skills -->
+    <section id="skills" class="skills">
+        <div class="main-text">
+            <span>technical and professional</span>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skill-main">
+            <div class="skill-left">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <P>72%</P>
+                    </div>
+                    <div class="bar">
+                        <span>html</span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Figma</p>
+                        <P>90%</P>
+                    </div>
+                    <div class="bar">
+                        <span>figma</span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Javascript</p>
+                        <P>80%</P>
+                    </div>
+                    <div class="bar">
+                        <span>javascript</span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <P>62%</P>
+                    </div>
+                    <div class="bar">
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-right">
+                <h3>Professional Skills</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <a href="#header" class="scroll-btn">
+        <i class='bx bxs-chevron-up-square bx-lg'></i>
+    </a>
+
+    <!-- <div class="end-icons">
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-twitter' ></i>
+        <i class='bx bxl-linkedin' ></i>
+        <i class='bx bxl-github'></i>
+        <i class='bx bxl-upwork' ></i>
+        <i class='bx bxl-dribbble'></i>
+        <i class='bx bxl-dribbble'></i>
+        <i class='bx bxl-whatsapp' ></i>
+        <i class='bx bxl-google-plus' ></i>
+        <i class='bx bxl-tux' ></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+    </div> -->
+
+
+
+
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link") ;
+        document.getElementById(tabname).classList.add("active-tab")
+        }
+       
+    </script>
+
+    <!-- <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.top = "0";
+        }
+        function closemenu() {
+            sidemenu.style.top = "-500px";
+        }
+
+    </script> -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    
+    <script src="js/app.js"></script>
+
+    <script>
+        
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            document.body.classList.toggle("light-theme");
+            if(document.body.classList.contains("light-theme")){
+            icon.src = "images/moon.png";
+            }else {
+                icon.src = "images/sun.png";
+            }
+        }
+        
+
+    
+        
+    </script>
+    
+</body>
+</html>
